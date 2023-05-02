@@ -8,13 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Department-Service" />
+        <module name="Discovery-Service" />
         <module name="Student-Service" />
+        <module name="Api-Gateway" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Api-Gateway" options="-parameters" />
       <module name="Department-Service" options="-parameters" />
+      <module name="Discovery-Service" options="-parameters" />
       <module name="Student-Service" options="-parameters" />
     </option>
   </component>
